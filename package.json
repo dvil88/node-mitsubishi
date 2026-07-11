@@ -1,7 +1,11 @@
 {
   "name": "node-mitsubishi",
   "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
   "scripts": {
+    "prepare": "npm run build",
     "build": "tsc -p tsconfig.json",
     "connect": "tsc -p tsconfig.json && node dist/connect.js",
     "typecheck": "tsc --noEmit -p tsconfig.json",
