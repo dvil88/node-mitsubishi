@@ -1,0 +1,18 @@
+{
+  "name": "node-mitsubishi",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "connect": "tsc -p tsconfig.json && node dist/connect.js",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "TypeScript controller for the Mitsubishi AC protocol",
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.0.0"
+  }
+}
